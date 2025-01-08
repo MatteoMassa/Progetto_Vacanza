@@ -1,16 +1,28 @@
-classDiagram
-    class Transaction {
-        float amount
-        str category
-        str description
-        datetime date
-        str type
-    }
+@startuml
+class Transaction {
+    +float amount
+    +str category
+    +str description
+    +datetime date
+    +str type
+}
 
-    class BudgetTracker {
-        +__init__(db_path: str)
-        +setup_database()
-        +add_transaction(transaction: Transaction)
-    }
+class BudgetTracker {
+    +__init__(db_path: str)
+    +setup_database()
+    +add_transaction(transaction: Transaction)
+    +get_transactions()
+    +get_balance()
+}
 
-    BudgetTracker --> Transaction : uses
+BudgetTracker --> Transaction : uses
+
+class BudgetApp {
+    +__init__(budget_tracker: BudgetTracker)
+    +add_transaction()
+    +update_balance()
+}
+
+BudgetApp --> BudgetTracker : uses
+
+@enduml
