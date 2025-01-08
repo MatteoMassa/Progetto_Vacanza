@@ -1,5 +1,21 @@
 # Progetto_Vacanza
 sono stanco
+
+# COME ACCEDERE AL PROGRAMMA!
+
+# Step 1.
+fare un install dei requirements.txt prima di procedere.
+
+# Step 2.
+Andare nella cartella "Progetto" e selezionare il PlantUML per poi procedere con un ALT+D per visualizzare l'interfaccia grafica
+
+# Step 3.
+Sempre nella cartella "Progetto" selezionare il file python "Progetto_Bank" ed eseguire tramite terminale il comando "python Progetto_Bank" oppure cliccando sulla freccetta a schermo nel lato destro del monitor 
+
+# Step 4.
+Divertiti a far finta di essere miliardario con un conto fasullo!
+
+
 ## Dettagli del Programma
 
 Il programma `Progetto_Vacanza` è un'applicazione di tracciamento del budget progettata per aiutare gli utenti a gestire le loro finanze personali. Ecco una panoramica dettagliata delle funzionalità e della struttura del programma:

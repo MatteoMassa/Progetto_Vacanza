@@ -1,24 +1,16 @@
+classDiagram
+    class Transaction {
+        float amount
+        str category
+        str description
+        datetime date
+        str type
+    }
 
+    class BudgetTracker {
+        +__init__(db_path: str)
+        +setup_database()
+        +add_transaction(transaction: Transaction)
+    }
 
-
-@startuml BudgetTrackerDiagram
-
-class Transaction {
-    +amount: float
-    +category: str
-    +description: str
-    +date: datetime
-    +type: str
-}
-
-class BudgetTracker {
-    -sqlite3.Connection conn
-    +__init__(db_path: str)
-    +setup_database()
-    +add_transaction(transaction: Transaction)
-}
-
-Transaction --> BudgetTracker : uses
-
-@enduml
-
+    BudgetTracker --> Transaction : uses
